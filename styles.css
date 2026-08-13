@@ -31,7 +31,7 @@ a{color:inherit;text-decoration:none}
   width:min(1240px,calc(100% - 36px));margin:auto;
   min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px;
 }
-.brand img{width:245px;max-height:62px;object-fit:contain}
+.brand img{width:330px;max-height:72px;object-fit:contain}
 .site-nav{display:flex;align-items:center;gap:22px;font-size:.93rem}
 .site-nav>a:not(.btn){color:#ddd}
 .site-nav>a:hover{color:var(--gold-2)}
@@ -49,7 +49,7 @@ a{color:inherit;text-decoration:none}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold-2)}
 .hero{
   min-height:100vh;position:relative;display:flex;align-items:center;
-  background:url("assets/hero/hero-visiora.png") center/cover no-repeat;
+  background:url("hero-visiora.png") center/cover no-repeat;
   overflow:hidden;
 }
 .hero-overlay{
@@ -119,8 +119,29 @@ footer{padding:55px 0 24px;background:#020202;border-top:1px solid rgba(255,255,
 .footer-links a{color:#c7c3bb}
 .footer-bottom{display:flex;justify-content:space-between;color:#777;font-size:.82rem;margin-top:35px;padding-top:20px;border-top:1px solid rgba(255,255,255,.06)}
 .whatsapp-float{
-  position:fixed;right:20px;bottom:20px;z-index:40;width:54px;height:54px;border-radius:50%;
-  display:grid;place-items:center;background:#25d366;color:#07130b;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.35)
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:40;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#25d366;
+  color:#fff;
+  box-shadow:0 12px 30px rgba(0,0,0,.38);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.whatsapp-float:hover{
+  transform:translateY(-3px) scale(1.04);
+  box-shadow:0 16px 36px rgba(0,0,0,.45);
+}
+
+.whatsapp-float svg{
+  width:31px;
+  height:31px;
 }
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:none}
