@@ -1,24 +1,514 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ajusco | Digital Open House | Visiora 360</title>
-  <meta name="description" content="Digital Open House de una propiedad en Ajusco, CDMX.">
-  <style>
-    body{margin:0;background:#050505;color:#f4f1e9;font-family:Arial,sans-serif;display:grid;place-items:center;min-height:100vh}
-    main{width:min(760px,calc(100% - 40px));text-align:center}
-    h1{font-size:clamp(2.5rem,8vw,5rem);margin:.2em 0}
-    p{color:#aaa;line-height:1.7}
-    a{display:inline-block;margin-top:18px;padding:14px 22px;background:#d6aa43;color:#080808;text-decoration:none;font-weight:700}
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Visiora 360 | Experiencias digitales inmobiliarias</title>
+  <meta name="description" content="Fotografía profesional, video cinematográfico, recorridos virtuales 360°, dron y Digital Open House para presentar propiedades de forma inmersiva." />
+
+  <meta property="og:title" content="Visiora 360 | Vive esta propiedad antes de visitarla" />
+  <meta property="og:description" content="Experiencias digitales inmobiliarias para mostrar propiedades de una forma más completa, profesional e inmersiva." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="hero-visiora.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <main>
-    <p style="color:#d6aa43;letter-spacing:.18em">DIGITAL OPEN HOUSE · AJUSCO</p>
-    <h1>Próximamente: vive esta propiedad antes de visitarla.</h1>
-    <p>Esta página ya está enlazada desde la web principal. En el siguiente paso agregaremos aquí las fotografías reales, videos, datos confirmados y el recorrido 360° de Floorfy.</p>
-    <a href="https://floorfy.com/es/tour/2679023" target="_blank" rel="noopener">Explorar recorrido 360°</a>
-  </main>
+
+<header class="site-header" id="top">
+  <div class="nav-shell">
+
+    <a class="brand" href="#inicio" aria-label="Visiora 360">
+      <img src="logo-visiora-360.png" alt="Visiora 360" />
+    </a>
+
+    <button class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#doh">Digital Open House</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+
+      <a class="btn btn-small btn-gold"
+         href="https://wa.me/525649652294?text=Hola%20Visiora%20360,%20quiero%20cotizar%20una%20propiedad."
+         target="_blank"
+         rel="noopener">
+        Cotiza tu propiedad
+      </a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container reveal">
+    <p class="eyebrow">EXPERIENCIAS DIGITALES INMOBILIARIAS</p>
+
+    <h1>
+      Vive esta propiedad
+      <span>antes de visitarla.</span>
+    </h1>
+
+    <p class="hero-copy">
+      Transformamos propiedades en experiencias digitales que generan interés,
+      destacan cada espacio y permiten que tus clientes conozcan un inmueble
+      antes de su primera visita.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#servicios">
+        Conoce nuestros servicios
+      </a>
+
+      <a class="btn btn-ghost" href="#doh">
+        Vive un Digital Open House
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-services container">
+    <span>Fotografía</span>
+    <span>Video</span>
+    <span>360°</span>
+    <span>Dron</span>
+    <span>Digital Open House</span>
+  </div>
+</section>
+
+
+<!-- SERVICIOS -->
+<section class="section" id="servicios">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <p class="eyebrow">SERVICIOS VISIORA 360</p>
+
+      <h2>
+        Transformamos propiedades en experiencias digitales.
+      </h2>
+
+      <p>
+        Producción audiovisual y tecnología inmobiliaria integradas para
+        presentar cada propiedad desde una nueva perspectiva.
+      </p>
+    </div>
+
+
+    <div class="service-grid">
+
+      <article class="service-card reveal">
+        <img src="fotografia-profesional.png"
+             alt="Fotografía profesional inmobiliaria"
+             loading="lazy">
+
+        <div class="service-body">
+          <span class="service-number">01</span>
+
+          <h3>Fotografía profesional</h3>
+
+          <p>
+            Capturamos cada espacio con composición, iluminación y detalle
+            profesional para mostrar la propiedad desde su mejor perspectiva.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="service-card reveal">
+        <img src="video-cinematografico.png"
+             alt="Video cinematográfico inmobiliario"
+             loading="lazy">
+
+        <div class="service-body">
+          <span class="service-number">02</span>
+
+          <h3>Video cinematográfico</h3>
+
+          <p>
+            Creamos recorridos audiovisuales que cuentan la historia de cada
+            propiedad y generan una experiencia visual dinámica y atractiva.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="service-card reveal">
+        <img src="recorrido-360.png"
+             alt="Recorrido virtual 360 inmobiliario"
+             loading="lazy">
+
+        <div class="service-body">
+          <span class="service-number">03</span>
+
+          <h3>Recorridos virtuales 360°</h3>
+
+          <p>
+            Permite que tus clientes exploren cada espacio desde cualquier
+            lugar utilizando celular, tablet o computadora.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="service-card reveal">
+        <img src="dron.png"
+             alt="Tomas con dron de una propiedad"
+             loading="lazy">
+
+        <div class="service-body">
+          <span class="service-number">04</span>
+
+          <h3>Tomas con dron</h3>
+
+          <p>
+            Mostramos arquitectura, terreno, ubicación y entorno desde
+            perspectivas aéreas que ayudan a comprender mejor cada propiedad.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- DIGITAL OPEN HOUSE -->
+<section class="doh-section" id="doh">
+
+  <div class="container doh-grid">
+
+    <div class="doh-media reveal">
+      <img src="hero-visiora.png"
+           alt="Digital Open House de Visiora 360"
+           loading="lazy">
+    </div>
+
+
+    <div class="doh-copy reveal">
+
+      <p class="eyebrow">PRODUCTO ESTRELLA</p>
+
+      <h2>Digital Open House</h2>
+
+      <h3>
+        No solo muestres una propiedad.
+        <span>Permite que la vivan.</span>
+      </h3>
+
+      <p>
+        El Digital Open House de Visiora 360 reúne fotografía profesional,
+        video cinematográfico, recorrido virtual 360°, contenido aéreo e
+        información de la propiedad dentro de una sola experiencia digital.
+      </p>
+
+
+      <div class="benefit-list">
+
+        <div>
+          <strong>Explora desde cualquier lugar</strong>
+          <span>Celular, tablet o computadora.</span>
+        </div>
+
+        <div>
+          <strong>Todo en un solo lugar</strong>
+          <span>Fotos, video, 360°, dron e información.</span>
+        </div>
+
+        <div>
+          <strong>Un solo enlace</strong>
+          <span>
+            Listo para compartir por WhatsApp y canales digitales.
+          </span>
+        </div>
+
+        <div>
+          <strong>Prospectos mejor informados</strong>
+          <span>Exploran primero y visitan después.</span>
+        </div>
+
+      </div>
+
+
+      <div class="doh-actions">
+
+        <a class="btn btn-gold"
+           href="propiedades/ajusco/">
+          Vive la experiencia
+        </a>
+
+        <a class="text-link" href="#como-funciona">
+          Conoce cómo funciona →
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PORTAFOLIO -->
+<section class="section alt" id="portafolio">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <p class="eyebrow">PORTAFOLIO</p>
+
+      <h2>
+        Experiencias que se pueden explorar.
+      </h2>
+
+      <p>
+        Magdalena Petlacalco es nuestro primer Digital Open House real.
+        La estructura ya está preparada para sumar futuras propiedades.
+      </p>
+    </div>
+
+
+    <article class="project-card reveal">
+
+      <div class="project-image">
+        <img src="hero-visiora.png"
+             alt="Digital Open House de Magdalena Petlacalco"
+             loading="lazy">
+      </div>
+
+      <div class="project-copy">
+
+        <p class="eyebrow">
+          MAGDALENA PETLACALCO · TLALPAN
+        </p>
+
+        <h3>Digital Open House</h3>
+
+        <p>
+          Una experiencia inmobiliaria diseñada para reunir fotografía,
+          video, recorrido 360°, información y contacto dentro de un solo
+          enlace.
+        </p>
+
+        <a class="btn btn-gold"
+           href="propiedades/ajusco/">
+          Vive la experiencia
+        </a>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- COMO FUNCIONA -->
+<section class="section" id="como-funciona">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <p class="eyebrow">CÓMO FUNCIONA</p>
+
+      <h2>
+        De la propiedad a una experiencia digital.
+      </h2>
+
+    </div>
+
+
+    <div class="steps">
+
+      <div class="step reveal">
+        <span>01</span>
+        <h3>Capturamos</h3>
+        <p>
+          Fotografía, video, recorrido 360° y contenido aéreo.
+        </p>
+      </div>
+
+      <div class="step reveal">
+        <span>02</span>
+        <h3>Construimos</h3>
+        <p>
+          Integramos todo dentro de una experiencia digital inmobiliaria.
+        </p>
+      </div>
+
+      <div class="step reveal">
+        <span>03</span>
+        <h3>Compartes</h3>
+        <p>
+          Recibes un solo enlace listo para enviar a tus clientes.
+        </p>
+      </div>
+
+      <div class="step reveal">
+        <span>04</span>
+        <h3>Conectas</h3>
+        <p>
+          Los prospectos conocen mejor la propiedad antes de solicitar una
+          visita.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NOSOTROS -->
+<section class="section alt" id="nosotros">
+
+  <div class="container about-grid">
+
+    <div class="section-heading reveal">
+
+      <p class="eyebrow">VISIORA 360</p>
+
+      <h2>
+        Más que mostrar propiedades, creamos experiencias.
+      </h2>
+
+    </div>
+
+
+    <div class="about-copy reveal">
+
+      <p>
+        Visiora 360 combina producción audiovisual, tecnología y herramientas
+        digitales para transformar la manera en que una propiedad se presenta
+        en internet.
+      </p>
+
+      <p>
+        Nuestro objetivo es que cada inmueble pueda conocerse, explorarse y
+        experimentarse antes de la primera visita.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section" id="contacto">
+
+  <div class="cta-overlay"></div>
+
+  <div class="container cta-content reveal">
+
+    <p class="eyebrow">HAGAMOS ALGO DIFERENTE</p>
+
+    <h2>
+      Tu próxima propiedad merece algo más que una publicación.
+    </h2>
+
+    <p>
+      Convirtámosla en una experiencia.
+    </p>
+
+    <div class="cta-actions">
+
+      <a class="btn btn-gold"
+         href="https://wa.me/525649652294?text=Hola%20Visiora%20360,%20quiero%20cotizar%20una%20propiedad."
+         target="_blank"
+         rel="noopener">
+        Solicita una cotización
+      </a>
+
+      <a class="btn btn-ghost"
+         href="mailto:visiora360@gmail.com">
+        visiora360@gmail.com
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-grid">
+
+    <img src="logo-visiora-360.png"
+         alt="Visiora 360">
+
+    <p>
+      Experiencias digitales inmobiliarias.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#servicios">Servicios</a>
+      <a href="#doh">Digital Open House</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#contacto">Contacto</a>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © <span id="year"></span> Visiora 360.
+    </span>
+
+    <span>
+      CDMX · Estado de México
+    </span>
+
+  </div>
+
+</footer>
+
+
+<a class="whatsapp-float"
+   href="https://wa.me/525649652294?text=Hola%20Visiora%20360,%20quiero%20información."
+   target="_blank"
+   rel="noopener"
+   aria-label="Contactar por WhatsApp">
+  WA
+</a>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
