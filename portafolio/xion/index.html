@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Xion Real Estate | Portafolio de propiedades</title>
+
+  <style>
+    :root{
+      --xion:#073b5c;
+      --xion-dark:#041f32;
+      --gold:#c9962e;
+      --white:#ffffff;
+      --soft:#f4f5f6;
+      --text:#142333;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--soft);
+      color:var(--text);
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+    .header{
+      background:#fff;
+      padding:25px 7%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:3px solid var(--gold);
+    }
+
+    .header img{
+      width:180px;
+      max-height:115px;
+      object-fit:contain;
+    }
+
+    .back{
+      color:var(--xion);
+      font-weight:700;
+    }
+
+    .hero{
+      min-height:430px;
+      padding:70px 7%;
+      display:flex;
+      align-items:center;
+      position:relative;
+      background:
+        linear-gradient(90deg,rgba(4,31,50,.94),rgba(4,31,50,.42)),
+        url("../../propiedades/ajusco/08-fachada.jpg") center/cover no-repeat;
+      color:#fff;
+    }
+
+    .hero-content{
+      max-width:720px;
+    }
+
+    .eyebrow{
+      color:var(--gold);
+      font-weight:700;
+      letter-spacing:3px;
+      margin-bottom:15px;
+    }
+
+    h1{
+      font-size:clamp(42px,6vw,76px);
+      line-height:.95;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      line-height:1.6;
+      max-width:620px;
+    }
+
+    .properties{
+      padding:65px 7% 90px;
+      max-width:1300px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .section-title span{
+      color:var(--gold);
+      font-weight:700;
+      letter-spacing:3px;
+    }
+
+    .section-title h2{
+      color:var(--xion);
+      font-size:38px;
+      margin-top:8px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 15px 40px rgba(0,0,0,.12);
+    }
+
+    .card img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+    }
+
+    .card-body{
+      padding:25px;
+    }
+
+    .tag{
+      color:var(--gold);
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:2px;
+    }
+
+    .card h3{
+      color:var(--xion);
+      font-size:27px;
+      margin:10px 0 5px;
+    }
+
+    .location{
+      color:#68727b;
+      margin-bottom:20px;
+    }
+
+    .price{
+      font-size:29px;
+      font-weight:700;
+      color:var(--xion);
+      margin-bottom:18px;
+    }
+
+    .features{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:25px;
+    }
+
+    .features span{
+      background:#f0f2f3;
+      padding:9px 12px;
+      border-radius:7px;
+      font-size:14px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:var(--gold);
+      color:#071e2d;
+      padding:15px 23px;
+      border-radius:7px;
+      font-weight:700;
+    }
+
+    footer{
+      background:var(--xion-dark);
+      color:#fff;
+      padding:35px 7%;
+      text-align:center;
+    }
+
+    footer strong{
+      color:var(--gold);
+    }
+
+    @media(max-width:700px){
+      .header{
+        padding:16px 5%;
+      }
+
+      .header img{
+        width:130px;
+      }
+
+      .hero{
+        min-height:520px;
+        padding:55px 7%;
+      }
+
+      .hero p{
+        font-size:17px;
+      }
+
+      .properties{
+        padding:50px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+
+  <img src="xion-logo.jpg" alt="Xion Real Estate">
+
+  <a class="back" href="../../index.html#portafolio">
+    ← Volver a Visiora 360
+  </a>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      XION REAL ESTATE × VISIORA 360
+    </div>
+
+    <h1>
+      Portafolio de propiedades
+    </h1>
+
+    <p>
+      Explora las propiedades comercializadas por Xion Real Estate
+      y descubre su experiencia digital desarrollada por Visiora 360.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="properties">
+
+  <div class="section-title">
+    <span>PROPIEDADES DISPONIBLES</span>
+    <h2>Encuentra tu próxima propiedad</h2>
+  </div>
+
+
+  <div class="grid">
+
+    <article class="card">
+
+      <img
+        src="../../propiedades/ajusco/08-fachada.jpg"
+        alt="Casa Magdalena Petlacalco">
+
+      <div class="card-body">
+
+        <span class="tag">
+          DIGITAL OPEN HOUSE · DOH 001
+        </span>
+
+        <h3>
+          Casa Magdalena Petlacalco
+        </h3>
+
+        <p class="location">
+          Magdalena Petlacalco · Tlalpan, CDMX
+        </p>
+
+        <div class="price">
+          $11,900,000 MXN
+        </div>
+
+        <div class="features">
+          <span>3 recámaras</span>
+          <span>3½ baños</span>
+          <span>3 estacionamientos</span>
+          <span>350 m² construcción</span>
+          <span>1,035 m² terreno</span>
+        </div>
+
+        <a
+          class="btn"
+          href="../../propiedades/ajusco/">
+          Explorar propiedad →
+        </a>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <p>
+    Propiedades comercializadas por
+    <strong>Xion Real Estate</strong>
+  </p>
+
+  <p>
+    Experiencia digital desarrollada y administrada por
+    <strong>Visiora 360</strong>
+  </p>
+
+</footer>
+
+</body>
+</html>
