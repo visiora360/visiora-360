@@ -13,3 +13,69 @@
     border-color: #E6E5E6 !important;
     color: #E6E5E6 !important;
 }
+/* =========================================
+   IDENTIDAD XION - DOH 001
+   Azul + blanco + beige
+   ========================================= */
+
+body {
+    background: #F4F5F6 !important;
+    color: #142333 !important;
+}
+
+.site-header {
+    background: rgba(255,255,255,.96) !important;
+    border-bottom: 1px solid #E6E5E6 !important;
+}
+
+.site-header a {
+    color: #073B5C !important;
+}
+
+/* Hero conserva fotografía pero cambia
+   la atmósfera negra por azul Xion */
+.hero {
+    background-color: #073B5C !important;
+}
+
+/* Paleta principal */
+.eyebrow {
+    color: #E6E5E6 !important;
+}
+
+.btn.gold {
+    background: #E6E5E6 !important;
+    color: #073B5C !important;
+    border-color: #E6E5E6 !important;
+}
+
+.btn.ghost {
+    background: transparent !important;
+    border-color: #E6E5E6 !important;
+    color: #E6E5E6 !important;
+}
+
+/* Secciones interiores */
+section {
+    border-color: rgba(7,59,92,.14) !important;
+}
+
+/* Tarjetas y bloques */
+.card,
+.panel {
+    background: #FFFFFF !important;
+    color: #142333 !important;
+    border-color: #E6E5E6 !important;
+}
+
+/* Títulos */
+h2,
+h3 {
+    color: #073B5C;
+}
+
+/* Detalles y acentos */
+strong,
+.accent {
+    color: #073B5C;
+}
