@@ -1,20 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Xion Real Estate | Portafolio de propiedades</title>
+  <title>Xion Real Estate | Portafolio de Propiedades</title>
 
   <style>
     :root{
-  --xion:#073b5c;
-  --xion-dark:#041f32;
-  --gold:#E6E5E6;
-  --white:#ffffff;
-  --soft:#f4f5f6;
-  --text:#142333;
-}
+      --xion:#0b3f63;
+      --xion-dark:#072f4b;
+      --beige:#E6E5E6;
+      --white:#ffffff;
+      --text:#14324a;
+      --soft:#f7f7f7;
+    }
+
     *{
       box-sizing:border-box;
       margin:0;
@@ -22,8 +23,8 @@
     }
 
     body{
-      font-family:Arial,Helvetica,sans-serif;
-      background:var(--soft);
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--white);
       color:var(--text);
     }
 
@@ -31,190 +32,288 @@
       text-decoration:none;
     }
 
+    /* HEADER */
+
     .header{
-      background:#fff;
-      padding:25px 7%;
+      min-height:90px;
+      padding:15px 7%;
+      background:#ffffff;
       display:flex;
-      justify-content:space-between;
       align-items:center;
-      border-bottom:3px solid var(--gold);
+      justify-content:space-between;
+      border-bottom:3px solid var(--beige);
     }
 
     .header img{
-      width:180px;
-      max-height:115px;
+      width:145px;
+      max-height:80px;
       object-fit:contain;
     }
 
     .back{
       color:var(--xion);
+      font-size:14px;
       font-weight:700;
+      letter-spacing:.5px;
     }
 
+    /* HERO */
+
     .hero{
-      min-height:430px;
+      min-height:480px;
       padding:70px 7%;
       display:flex;
       align-items:center;
-      position:relative;
       background:
-linear-gradient(
-    90deg,
-    rgba(4,31,50,.92),
-    rgba(4,31,50,.42)
-),
-url("../../propiedades/ajusco/08-fachada.jpg") center/cover no-repeat;
-      color:#fff;
+        linear-gradient(
+          90deg,
+          rgba(7,47,75,.97) 0%,
+          rgba(11,63,99,.92) 55%,
+          rgba(11,63,99,.80) 100%
+        );
+      color:#ffffff;
     }
 
     .hero-content{
-      max-width:720px;
+      max-width:850px;
     }
 
     .eyebrow{
-      color:var(--gold);
+      color:var(--beige);
+      font-size:14px;
       font-weight:700;
       letter-spacing:3px;
-      margin-bottom:15px;
+      margin-bottom:18px;
+      text-transform:uppercase;
     }
 
-    h1{
-      font-size:clamp(42px,6vw,76px);
-      line-height:.95;
-      margin-bottom:20px;
+    .hero h1{
+      font-size:clamp(44px,7vw,82px);
+      line-height:.98;
+      margin-bottom:25px;
+      letter-spacing:-2px;
     }
 
     .hero p{
-      font-size:20px;
-      line-height:1.6;
-      max-width:620px;
+      max-width:650px;
+      font-size:19px;
+      line-height:1.7;
+      color:#f1f1f1;
     }
 
-    .properties{
-      padding:65px 7% 90px;
-      max-width:1300px;
-      margin:auto;
-    }
+    /* INTRO */
 
-    .section-title{
+    .intro{
+      padding:75px 7% 35px;
       text-align:center;
-      margin-bottom:40px;
+      background:#ffffff;
     }
 
-    .section-title span{
-      color:var(--gold);
+    .intro span{
+      color:var(--xion);
+      font-size:13px;
       font-weight:700;
       letter-spacing:3px;
+      text-transform:uppercase;
     }
 
-    .section-title h2{
-      color:var(--xion);
+    .intro h2{
+      margin-top:12px;
       font-size:38px;
-      margin-top:8px;
+      color:var(--xion-dark);
+    }
+
+    .intro p{
+      max-width:720px;
+      margin:18px auto 0;
+      line-height:1.7;
+      color:#667786;
+      font-size:17px;
+    }
+
+    /* PROPIEDADES */
+
+    .properties{
+      padding:35px 7% 90px;
+      background:#ffffff;
     }
 
     .grid{
+      max-width:1180px;
+      margin:auto;
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
       gap:30px;
     }
 
     .card{
-      background:#fff;
+      background:#ffffff;
       border-radius:14px;
       overflow:hidden;
-      box-shadow:0 15px 40px rgba(0,0,0,.12);
+      box-shadow:0 15px 45px rgba(7,47,75,.14);
+      border:1px solid #eeeeee;
+      transition:.25s ease;
     }
 
-    .card img{
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 22px 55px rgba(7,47,75,.20);
+    }
+
+    .card-image{
+      height:280px;
+      position:relative;
+      overflow:hidden;
+      background:var(--beige);
+    }
+
+    .card-image img{
       width:100%;
-      height:260px;
+      height:100%;
       object-fit:cover;
     }
 
-    .card-body{
-      padding:25px;
-    }
-
-    .tag{
-      color:var(--gold);
-      font-size:13px;
+    .status{
+      position:absolute;
+      top:18px;
+      left:18px;
+      background:var(--beige);
+      color:var(--xion-dark);
+      padding:9px 14px;
+      border-radius:6px;
+      font-size:12px;
       font-weight:700;
-      letter-spacing:2px;
+      letter-spacing:1px;
+      text-transform:uppercase;
     }
 
-    .card h3{
-      color:var(--xion);
-      font-size:27px;
-      margin:10px 0 5px;
+    .card-body{
+      padding:28px;
     }
 
     .location{
-      color:#68727b;
-      margin-bottom:20px;
+      color:var(--xion);
+      font-size:13px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin-bottom:9px;
+    }
+
+    .card h3{
+      font-size:27px;
+      color:var(--xion-dark);
+      margin-bottom:12px;
     }
 
     .price{
       font-size:29px;
-      font-weight:700;
+      font-weight:800;
       color:var(--xion);
-      margin-bottom:18px;
+      margin-bottom:20px;
     }
 
     .features{
       display:flex;
       flex-wrap:wrap;
-      gap:10px;
+      gap:8px;
       margin-bottom:25px;
     }
 
     .features span{
-      background:#f0f2f3;
+      background:#f1f1f1;
+      color:var(--xion-dark);
       padding:9px 12px;
-      border-radius:7px;
-      font-size:14px;
+      border-radius:6px;
+      font-size:13px;
     }
 
     .btn{
       display:inline-block;
-      background:var(--gold);
-      color:#071e2d;
-      padding:15px 23px;
+      background:var(--xion);
+      color:#ffffff;
+      padding:14px 22px;
       border-radius:7px;
       font-weight:700;
+      transition:.2s ease;
     }
 
-    footer{
+    .btn:hover{
       background:var(--xion-dark);
-      color:#fff;
-      padding:35px 7%;
+    }
+
+    /* ALIANZA */
+
+    .alliance{
+      background:var(--beige);
+      padding:65px 7%;
       text-align:center;
     }
 
+    .alliance h2{
+      color:var(--xion-dark);
+      font-size:31px;
+      margin-bottom:15px;
+    }
+
+    .alliance p{
+      max-width:720px;
+      margin:auto;
+      line-height:1.7;
+      color:#43596a;
+    }
+
+    .alliance strong{
+      color:var(--xion);
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:var(--xion-dark);
+      color:#ffffff;
+      padding:35px 7%;
+      text-align:center;
+      font-size:14px;
+    }
+
     footer strong{
-      color:var(--gold);
+      color:var(--beige);
     }
 
     @media(max-width:700px){
+
       .header{
-        padding:16px 5%;
+        padding:12px 5%;
       }
 
       .header img{
-        width:130px;
+        width:115px;
       }
 
       .hero{
-        min-height:520px;
-        padding:55px 7%;
+        min-height:420px;
+        padding:55px 6%;
+      }
+
+      .hero h1{
+        font-size:47px;
       }
 
       .hero p{
-        font-size:17px;
+        font-size:16px;
+      }
+
+      .intro{
+        padding:55px 6% 30px;
+      }
+
+      .intro h2{
+        font-size:31px;
       }
 
       .properties{
-        padding:50px 5%;
+        padding:25px 6% 65px;
       }
     }
   </style>
@@ -222,109 +321,139 @@ url("../../propiedades/ajusco/08-fachada.jpg") center/cover no-repeat;
 
 <body>
 
-<header class="header">
+  <!-- HEADER XION -->
+  <header class="header">
 
-  <img src="xion-logo.jpg" alt="Xion Real Estate">
+    <img src="xion-logo.jpg" alt="Xion Real Estate">
 
-  <a class="back" href="../../index.html#portafolio">
-    ← Volver a Visiora 360
-  </a>
+    <a class="back" href="../../">
+      ← Portafolios
+    </a>
 
-</header>
-
-
-<section class="hero">
-
-  <div class="hero-content">
-
-    <div class="eyebrow">
-      XION REAL ESTATE × VISIORA 360
-    </div>
-
-    <h1>
-      Portafolio de propiedades
-    </h1>
-
-    <p>
-      Explora las propiedades comercializadas por Xion Real Estate
-      y descubre su experiencia digital desarrollada por Visiora 360.
-    </p>
-
-  </div>
-
-</section>
+  </header>
 
 
-<section class="properties">
+  <!-- HERO -->
+  <section class="hero">
 
-  <div class="section-title">
-    <span>PROPIEDADES DISPONIBLES</span>
-    <h2>Encuentra tu próxima propiedad</h2>
-  </div>
+    <div class="hero-content">
 
-
-  <div class="grid">
-
-    <article class="card">
-
-      <img
-        src="../../propiedades/ajusco/08-fachada.jpg"
-        alt="Casa Magdalena Petlacalco">
-
-      <div class="card-body">
-
-        <span class="tag">
-          DIGITAL OPEN HOUSE · DOH 001
-        </span>
-
-        <h3>
-          Casa Magdalena Petlacalco
-        </h3>
-
-        <p class="location">
-          Magdalena Petlacalco · Tlalpan, CDMX
-        </p>
-
-        <div class="price">
-          $11,900,000 MXN
-        </div>
-
-        <div class="features">
-          <span>3 recámaras</span>
-          <span>3½ baños</span>
-          <span>3 estacionamientos</span>
-          <span>350 m² construcción</span>
-          <span>1,035 m² terreno</span>
-        </div>
-
-        <a
-          class="btn"
-          href="../../propiedades/ajusco/">
-          Explorar propiedad →
-        </a>
-
+      <div class="eyebrow">
+        Xion Real Estate
       </div>
 
-    </article>
+      <h1>
+        Portafolio<br>
+        de propiedades
+      </h1>
 
-  </div>
+      <p>
+        Descubre propiedades comercializadas por Xion Real Estate
+        a través de una experiencia digital creada para conocer cada
+        espacio antes de visitarlo.
+      </p>
 
-</section>
+    </div>
+
+  </section>
 
 
-<footer>
+  <!-- INTRO -->
+  <section class="intro">
 
-  <p>
-    Propiedades comercializadas por
-    <strong>Xion Real Estate</strong>
-  </p>
+    <span>Propiedades disponibles</span>
 
-  <p>
-    Experiencia digital desarrollada y administrada por
-    <strong>Visiora 360</strong>
-  </p>
+    <h2>Encuentra tu próximo espacio</h2>
 
-</footer>
+    <p>
+      Explora información, fotografía profesional y experiencias
+      digitales de las propiedades disponibles en nuestro portafolio.
+    </p>
+
+  </section>
+
+
+  <!-- PROPIEDADES -->
+  <section class="properties">
+
+    <div class="grid">
+
+      <!-- MAGDALENA PETLACALCO -->
+      <article class="card">
+
+        <div class="card-image">
+
+          <img
+            src="../../propiedades/ajusco/ChatGPT Image 14 ago 2026, 22_00_00.png"
+            alt="Casa en venta Magdalena Petlacalco"
+          >
+
+          <div class="status">
+            En venta
+          </div>
+
+        </div>
+
+        <div class="card-body">
+
+          <div class="location">
+            Magdalena Petlacalco · Tlalpan
+          </div>
+
+          <h3>Casa en venta</h3>
+
+          <div class="price">
+            $11,900,000 MXN
+          </div>
+
+          <div class="features">
+
+            <span>3 recámaras</span>
+            <span>3½ baños</span>
+            <span>3 estacionamientos</span>
+            <span>350 m² construcción</span>
+            <span>1,035 m² terreno</span>
+
+          </div>
+
+          <a
+            class="btn"
+            href="../../propiedades/ajusco/"
+          >
+            Explorar propiedad
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ALIANZA -->
+  <section class="alliance">
+
+    <h2>Xion Real Estate × Visiora 360</h2>
+
+    <p>
+      Propiedades comercializadas por <strong>Xion Real Estate</strong>
+      presentadas mediante experiencias digitales inmobiliarias
+      desarrolladas por <strong>Visiora 360</strong>.
+    </p>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <strong>XION REAL ESTATE</strong><br><br>
+
+    Portafolio digital de propiedades · Experiencia digital por Visiora 360
+
+  </footer>
 
 </body>
 </html>
