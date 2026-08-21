@@ -79,3 +79,20 @@ strong,
 .accent {
     color: #073B5C;
 }
+
+
+/* PROPERTY PASSPORT */
+.property-passport {
+  width: 100%;
+  max-width: 1180px;
+  margin: 40px auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.property-passport img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
