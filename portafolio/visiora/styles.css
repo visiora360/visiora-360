@@ -50,12 +50,11 @@ body {
   gap: 30px;
 }
 
-.xion-logo {
-  width: 150px;
+.visiora-logo {
+  width: 220px;
   height: auto;
   display: block;
 }
-
 .main-nav {
   display: flex;
   align-items: center;
