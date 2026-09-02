@@ -1002,3 +1002,43 @@ select {
   }
 
 }
+
+@media (max-width: 520px) {
+
+  .location-section,
+  .passport-section {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .location-layout,
+  .passport-layout {
+    gap: 36px;
+  }
+
+  .location-copy h2,
+  .passport-copy h2 {
+    font-size: 42px;
+    line-height: 1.08;
+  }
+
+  .location-copy p,
+  .passport-copy p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .location-media,
+  .passport-media {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .passport-media img {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    display: block;
+  }
+
+}
