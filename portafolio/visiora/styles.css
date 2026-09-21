@@ -666,3 +666,17 @@ img {
   }
 
 }
+/* Imagen portada de propiedades */
+.property-image {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 55%;
+    display: block;
+}
